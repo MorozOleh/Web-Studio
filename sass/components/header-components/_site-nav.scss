@@ -1,8 +1,16 @@
 //---------------------Site-nav------------------------
+// .header-nav{
+//   display: flex;
+// }
+
 .site-nav{
   @extend %list;
-  display: flex;
-  margin-left: 85px;
+
+  @media screen and (min-width: $decktop) {
+     display: flex;
+      margin-left: 85px; 
+  }
+
 }
 
 .site-nav__item + .site-nav__item{

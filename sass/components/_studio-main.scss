@@ -60,9 +60,14 @@
 /* ----------------------------------------------section how it work--------------------------------------------------------------- */
 
 .features{
-  padding-top: 94px;
   font-family: $font-text;
   font-style: normal;
+
+  @media screen and (min-width: $mobile){
+      padding-top: 60px;}
+    
+        @media screen and (min-width: $decktop){
+        padding-top: 62px;} 
 }
 
   .features__title{
@@ -84,27 +89,44 @@
 }
 
     .features__list{
-      display: flex;
       @extend %list; 
+
+       @media screen and(min-width: $tablet){
+       display: flex;
+       flex-wrap: wrap;}
+
+        @media screen and(min-width: $decktop){
+        display: flex;
+        }
 }
 
       .features__item{
-        margin-right: 30px;
-        width: 270px;
 
-        &:last-child{
-          margin-right: 0px;
-         }
+        @media screen and (min-width: $decktop) {
+          margin-right: 30px;
+
+            &:last-child{
+              margin-right: 0px;}
+            }
         }
       
         .style{
           @include centeredFlex();
           @include borderedRadius();
-          width: 270px;
+          
           height: 120px;
           background-color: #F5F4FA;;
           margin-bottom: 30px;
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+          @media screen and (min-width: $mobile){
+            width: 450px;}
+
+            @media screen and (min-width: $tablet){
+            width: 354px;}
+          
+              @media screen and (min-width: $decktop){
+              width: 270px;}
         }
 
           .features__icon{
@@ -113,6 +135,7 @@
           }
 
             .features__subtitle{
+             
               font-weight: 700;
               font-size: 14px;
               line-height: 1.14;
@@ -121,6 +144,10 @@
               color: $primary-text-color;
               text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
               margin-bottom: 10px;
+
+                    @media screen and ( max-width: 767px){
+                      text-align: center;
+                    }
             }
 
               .features__text{
@@ -129,8 +156,18 @@
                 line-height: 1.71;
                 letter-spacing: 0.03em;
                 color: $secondary-color;
-                width: 270px;
+              
                 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+                          @media screen and (min-width: $mobile){
+                          width: 450px;}
+
+                            @media screen and (min-width: $tablet){
+                            width: 354px;}
+          
+                              @media screen and (min-width: $decktop){
+                              width: 270px;}
+
               }
 
 /* -------------------------------------------------------end section features------------------------------------------------------ */

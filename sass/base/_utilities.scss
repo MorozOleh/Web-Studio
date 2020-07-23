@@ -1,12 +1,8 @@
-img{
-  display: block;
-}
 
-body{
-  background: var(--primary-white-color);
-  padding-top: 80px;
-}
-
+// body{
+//   background: var(--primary-white-color);
+//   padding-top: 80px;
+// }
 
 
 // /* Змінна стилів в list */
@@ -23,14 +19,31 @@ h1,h2,h3,h4,h5,h6,p{
 }
 /* --------------- */
 
+img{
+  display: block;
+}
+
+
 textarea{
   display: block;
 }
 
 .container {
-  width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
+
+  background-color: yellowgreen;
+  @media screen and  (min-width: $mobile){
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $tablet){
+    width: $tablet;
+  }
+
+ @media screen and (min-width: $decktop){
+    width: $decktop;
+  }
 }
