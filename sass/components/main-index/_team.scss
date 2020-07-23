@@ -85,9 +85,6 @@
 
 
 .staff-social__link{
-  // display: flex;
-  // justify-content: space-around;
-  // align-items: center;
   @include centeredFlex ( $justify : space-around);
   width: 44px;
   height: 44px;
