@@ -1,67 +1,86 @@
 
 .job-direction{
-  padding-top: 94px ;
-  padding-bottom: 94px;
+  padding-top: 60px ;
+  padding-bottom: 60px;
   font-family: $font-text;
   font-style: normal;
+
+  @media screen and (min-width: $decktop){
+    padding-top: 94px ;
+    padding-bottom: 94px;  
+  }
 }
 
   .job-direction__title {
     text-align: center;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.18;
     letter-spacing: 0.03em; 
     color: $primary-text-color;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $decktop){
     margin-bottom: 50px;
-  }
+    font-size: 36px;  
+    line-height: 1.16;}
+  
+}
 
     .job-direction__list{
       
       @extend %list;
-
-      @media screen and (min-width: $decktop){
+      margin: -15px;
+        @media screen and (min-width: $tablet){
         display: flex;}
-      
+       }
+
+    .job-direction__item{
+        display: block;
+        margin: 15px;
+        position: relative;
+  
+    } 
+
+    .job-direction__link{
+        text-decoration:none;
     }
 
-      .job-direction__item{
-        display: block;
-        width: 370px;
-        height: 294px;
-        margin-right: 30px;
-        position: relative;
+    .job-direction__picture{
+               
+        @media screen and (min-width: $mobile){
+            width: 450px;
+            height: 294px;}
 
-        &:last-child{
-          margin-right: 0px;
-        }
-         } 
+        @media screen and (min-width: $tablet){
+            width: 226px;
+            height: 188px;}
 
-          .job-direction__link{
-            text-decoration:none;
-          }
-
-            .job-direction__picture{
-              width: 370px;
-              height: 294px;
+        @media screen and (min-width: $decktop){
+            width: 370px;
+            height: 294px;}
             }
 
-              .job-direction__position{
-                position: absolute;
-                width: 100%;
-                height: 70px;
-                background-color: rgba(47, 48, 58, 0.8);
-                bottom: 0px;
-                left: 0px;
-              }
+    .job-direction__position{
+        @include centeredFlex();
+        position: absolute;
+        width: 100%;
+        height: 70px;
+        background-color: rgba(47, 48, 58, 0.8);
+        bottom: 0px;
+        left: 0px;
 
-                .job-direction__text{
-                  text-align: center;
-                  padding: 27px 82px;
-                  font-weight: 700;
-                  font-size: 14px;
-                  line-height: 1.15;
-                  letter-spacing: 0.03em;
-                  text-transform: uppercase;
-                  color: $primary-white-color;
-                }
+
+        @media screen and (min-width: $tablet) and (max-width: 1199px){
+        height: 45px;}
+
+        }
+
+    .job-direction__text{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.15;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $primary-white-color;
+    }

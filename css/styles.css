@@ -314,7 +314,6 @@ textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: yellowgreen;
   }
 }
 
@@ -372,6 +371,12 @@ textarea {
   display: none;
 }
 
+.first-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media screen and (max-width: 767px) {
   .first-mobile {
     position: absolute;
@@ -383,6 +388,7 @@ textarea {
     text-align: center;
     display: none;
     padding-top: 120px;
+    padding-bottom: 60px;
   }
   .first-mobile.is-open {
     display: block;
@@ -405,15 +411,7 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .site-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: 85px;
+    margin-left: 81px;
   }
 }
 
@@ -430,14 +428,14 @@ textarea {
 }
 
 .site-nav__link {
-  display: block;
+  display: inline-block;
   position: relative;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   color: var(--main-color);
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
-  line-height: 1.20;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   text-decoration: none;
   -webkit-transition-duration: 250ms;
@@ -446,9 +444,18 @@ textarea {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .site-nav__link {
     padding-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav__link {
+    font-size: 14px;
+    line-height: 1.20;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -469,15 +476,17 @@ textarea {
 
 .site-nav__link--active::after {
   content: "";
-  display: block;
   position: absolute;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   bottom: 0;
   left: 0;
   width: 100%;
   border: 2px solid #2196F3;
+}
+
+@media screen and (max-width: 767px) {
+  .header-address {
+    margin-top: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -491,6 +500,12 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .address-nav__item + .address-nav__item {
+    margin-top: 16px;
   }
 }
 
@@ -758,23 +773,42 @@ textarea {
 }
 
 .job-direction {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
+}
+
+@media screen and (min-width: 1200px) {
+  .job-direction {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .job-direction__title {
   text-align: center;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
+  .job-direction__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+
+.job-direction__list {
+  margin: -15px;
+}
+
+@media screen and (min-width: 768px) {
   .job-direction__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -784,26 +818,45 @@ textarea {
 
 .job-direction__item {
   display: block;
-  width: 370px;
-  height: 294px;
-  margin-right: 30px;
+  margin: 15px;
   position: relative;
-}
-
-.job-direction__item:last-child {
-  margin-right: 0px;
 }
 
 .job-direction__link {
   text-decoration: none;
 }
 
-.job-direction__picture {
-  width: 370px;
-  height: 294px;
+@media screen and (min-width: 480px) {
+  .job-direction__picture {
+    width: 450px;
+    height: 294px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .job-direction__picture {
+    width: 226px;
+    height: 188px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .job-direction__picture {
+    width: 370px;
+    height: 294px;
+  }
 }
 
 .job-direction__position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   width: 100%;
   height: 70px;
@@ -812,9 +865,13 @@ textarea {
   left: 0px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .job-direction__position {
+    height: 45px;
+  }
+}
+
 .job-direction__text {
-  text-align: center;
-  padding: 27px 82px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.15;

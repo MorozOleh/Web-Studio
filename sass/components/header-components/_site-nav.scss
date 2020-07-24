@@ -1,5 +1,7 @@
 
 .first-mobile{
+
+    display: flex;
     @media screen and(max-width: 767px){
     position: absolute;
     top:100%;
@@ -10,6 +12,7 @@
     text-align: center;
     display: none;
     padding-top: 120px;
+    padding-bottom: 60px;
 
     &.is-open{
         display: block;}
@@ -27,12 +30,9 @@
 .site-nav{
   @extend %list;
 
-   @media screen and (min-width: $tablet) {
-    display: flex;   }
-
-  @media screen and (min-width: $decktop) {
+  @media screen and (min-width: $tablet) {
      display: flex;
-      margin-left: 85px;} 
+      margin-left: 81px;} 
 }
 
 
@@ -50,23 +50,28 @@
 
 
 .site-nav__link{
-  display: block;
+  display: inline-block;
   position: relative;
   font-family:$font-text;
   font-style: normal ;
   color:var(--main-color);
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
-  line-height: 1.20;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   text-decoration: none;
   @include transitionDurationTaming();
   
 // --padding beetwen text an border
-@media screen and (min-width: $mobile) {
+@media screen and (max-width: 767px) {
     padding-bottom: 8px;}
 
-//
+@media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.20;
+    padding-top: 32px;
+    padding-bottom: 32px;}
+
   @media screen and (min-width: $decktop) {
   padding-top: 32px;
   padding-bottom: 32px;}
@@ -80,9 +85,7 @@
 
       &--active::after{
       content:"";
-      display: block;
       position: absolute;
-      align-items: center;
       bottom: 0;
       left: 0;
       width: 100%;
