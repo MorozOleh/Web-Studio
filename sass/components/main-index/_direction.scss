@@ -29,8 +29,8 @@
 
     .job-direction__list{
       
-      @extend %list;
-      margin: -15px;
+        @extend %list;
+        margin: -15px;
         @media screen and (min-width: $tablet){
         display: flex;}
        }

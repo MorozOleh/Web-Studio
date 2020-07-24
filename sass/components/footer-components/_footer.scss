@@ -1,0 +1,21 @@
+@import"./area__first";
+@import"./area__second";
+@import"./area_third";
+@import"./copyright";
+
+
+.footer-page{
+    background: #2F303A;
+    margin-right: auto;
+    margin-left: auto;
+
+  @media screen and (min-width: $mobile){
+    width: $mobile;}
+  
+   @media screen and (min-width: $tablet){
+    width: $tablet;}
+  
+   @media screen and (min-width: $decktop){
+    width: 1600px;}
+}
+
