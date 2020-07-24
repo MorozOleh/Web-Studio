@@ -1,21 +1,17 @@
 //---------------------header-address---------------------
 .header-address{
-  @media screen and(min-width: $decktop){
+  @media screen and(min-width: $tablet){
     margin-left: auto;
 }
 }
+
 .address-nav {
   @extend %list;
 
-    @media screen and (max-width:479px){
-     text-align: center; 
-    }  
-  
-    @media screen and(min-width: $decktop){
+     @media screen and(min-width: $decktop){
       display: flex;
   }
 }
-
 
 .address-nav__item + .address-nav__item{
     @media screen and(min-width: $decktop){
@@ -24,8 +20,6 @@
 }
 
 .address-nav__link{
-  display: flex;
-  align-items: center;
   font-family:$font-text;
   font-style: normal;
   font-weight: 500;
@@ -37,6 +31,11 @@
   @include transitionDurationTaming();
   padding-top: 32px;
   padding-bottom: 32px;
+
+   @media screen and(min-width: $decktop){
+        display: flex;
+        align-items: center;
+  }
 
     &:hover,
     &:focus{
@@ -57,5 +56,3 @@
   margin-right: 10px;
   fill:currentColor;
 }
-
-//---------------------------address-header__end---------

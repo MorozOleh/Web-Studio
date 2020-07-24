@@ -1,21 +1,53 @@
-//---------------------Site-nav------------------------
-// .header-nav{
-//   display: flex;
-// }
+
+.first-mobile{
+    @media screen and(max-width: 767px){
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: 100%;
+    min-height: 90px;
+    background-color: white;
+    text-align: center;
+    display: none;
+    padding-top: 120px;
+
+    &.is-open{
+        display: block;}
+    } 
+}
+
+
+.header-nav{
+    @media screen and(min-width: $tablet){
+       display: flex;
+       align-items: center; 
+    }
+}
 
 .site-nav{
   @extend %list;
 
+   @media screen and (min-width: $tablet) {
+    display: flex;   }
+
   @media screen and (min-width: $decktop) {
      display: flex;
-      margin-left: 85px; 
-  }
-
+      margin-left: 85px;} 
 }
 
-.site-nav__item + .site-nav__item{
-  margin-left: 50px;
-}
+
+
+     .site-nav__item + .site-nav__item{
+        @media screen and (max-width: 767px){
+            padding-top:40px;}
+        
+
+        @media screen and (min-width: $tablet){
+            margin-left: 50px;}   
+    }
+
+
+
 
 .site-nav__link{
   display: block;
@@ -29,8 +61,15 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   @include transitionDurationTaming();
+  
+// --padding beetwen text an border
+@media screen and (min-width: $mobile) {
+    padding-bottom: 8px;}
+
+//
+  @media screen and (min-width: $decktop) {
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 32px;}
 
       &:hover,
       &:focus {
@@ -43,6 +82,7 @@
       content:"";
       display: block;
       position: absolute;
+      align-items: center;
       bottom: 0;
       left: 0;
       width: 100%;
