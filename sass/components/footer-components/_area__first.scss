@@ -1,10 +1,14 @@
 
 .area-first{
-    text-align: center;
+    @media screen and (max-width: 1199px){
+        text-align: center;
+    }
+    
 }
 
 .address-footer{
-  @extend %list;
+    margin-top: 20px;
+    @extend %list;
 }
 
 .area-first__link{

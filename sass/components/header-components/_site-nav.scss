@@ -1,23 +1,4 @@
 
-.first-mobile{
-
-    display: flex;
-    @media screen and(max-width: 767px){
-    position: absolute;
-    top:100%;
-    left: 0;
-    width: 100%;
-    min-height: 90px;
-    background-color: white;
-    text-align: center;
-    display: none;
-    padding-top: 120px;
-    padding-bottom: 60px;
-
-    &.is-open{
-        display: block;}
-    } 
-}
 
 
 .header-nav{

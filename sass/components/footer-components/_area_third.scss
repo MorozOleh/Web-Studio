@@ -1,3 +1,14 @@
+.area-third{
+      @media screen and (max-width: 1199px){
+        text-align: center;
+        padding-top: 60px;
+    }
+   
+
+
+
+}
+
 .area-third__title{
   font-family: $font-text;
   font-style: normal;
@@ -12,8 +23,9 @@
 
 
 .footer-form__input{
+ 
   max-height: 50px;
-  width: 368px;
+  width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -22,11 +34,24 @@
   border-radius: 4px;
   background-color: rgba(0, 0, 0, 0);
   color: $primary-white-color;
+ 
+  @media screen and (max-width: 767px){
+     margin-bottom: 20px; 
+  }
+ 
+@media screen and (min-width : $tablet) and (max-width: 1199px){
+    width: 450px;
+    margin-right: 159px;
+    margin-left: 159px;
+    margin-bottom: 20px;}
+
+    @media screen and (min-width: $decktop){
+        width: 358px;
+            }
 }
 
 .footer-form__botton{
   display: inline-flex;
-  align-items: center;
   margin-left: 12px;
   padding: 10px 32px;
   border: 1px solid transparent;

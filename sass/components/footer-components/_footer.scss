@@ -19,3 +19,23 @@
     width: 1600px;}
 }
 
+.footer-area{
+    padding-top: 60px;
+    padding-bottom: 60px;
+       @media screen and (min-width: $decktop){
+          display: flex; 
+          justify-content: space-around; 
+          align-items: baseline;}
+}
+
+.footer-tablet{
+    @media screen and (min-width: $tablet) {
+      display: flex;  
+      justify-content: space-around;
+      align-items: baseline;
+    }
+
+
+
+  
+}

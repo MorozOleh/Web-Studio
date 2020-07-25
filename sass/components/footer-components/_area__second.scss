@@ -1,3 +1,20 @@
+.area-second{
+    
+    display: flex;
+    flex-direction: column;
+    
+    @media screen and (max-width: 767px){
+        padding-top: 60px;
+    }
+
+    @media screen and (max-width: 1199px){
+        align-items: center;}
+
+   @media screen and (min-width: $decktop){
+       margin-left:69px
+   }     
+}
+
 .area-second__title{
   margin-bottom: 20px;
   font-family: $font-text;
@@ -12,6 +29,7 @@
 }
 
 .footer-socials{
+
   @extend %list;
   display: flex;
 }
