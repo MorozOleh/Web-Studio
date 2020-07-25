@@ -2,15 +2,46 @@
 .portfolio{
   font-family: $font-text;
   font-style: normal;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 94px;
+
+   @media screen and (min-width: $decktop){
+      padding-top: 50px;
+  }
 }
 
 .portfolio__list{
-  display: flex;
-  flex-wrap: wrap;
-  @extend %list
+   margin: -15px;
+  @extend %list;
+
+  @media screen and (max-width: $mobile-max){
+      display: block;
+  }
+
+        display: flex;
+        flex-wrap: wrap;
+
 }
+
+
+
+
+
+.portfolio__item{
+    margin: 15px;
+    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
+
+
+    &:hover{
+  box-shadow: 
+      1px 4px 6px rgba(0, 0, 0, 0.16), 
+      0px 4px 4px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.12);
+    }
+
+}
+
+
 
 .product__link{
   display: block;
@@ -22,43 +53,12 @@
 }
 }
 
-.portfolio__item{
-  width:calc((100% - 60px)/3);
-  margin-top: 30px;
-  margin-right: 30px;
-  transition:  250ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
-
-
-    &:nth-child(3n){
-      margin-right: 0px;
-}
-
-    &:nth-last-child(-n + 3){
-      margin-bottom: 0;
-}
-
-    &:nth-child(-n + 3){
-      margin-top: 0px;
-}
-
-    &:hover{
-  box-shadow: 
-      1px 4px 6px rgba(0, 0, 0, 0.16), 
-      0px 4px 4px rgba(0, 0, 0, 0.06),
-      0px 1px 1px rgba(0, 0, 0, 0.12);
-    }
-
-}
 
 .product__container{
   position: relative;
   overflow: hidden;
 }
 
-.product__icon{
-  width: 370px;
-  height: 294px;
-}
 
 .product__position{
   position: absolute;
@@ -72,6 +72,7 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
 }
+
 
 .product__kryak{
   width: 100%;
