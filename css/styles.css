@@ -1366,12 +1366,6 @@ textarea {
   background: #188CE8;
 }
 
-/* -------------------------------------------------two section portfolio----------------------------------------------------------*/
-/* -----------------------------------------------------page-portfolio------------------------------------------------------------ */
-.off {
-  display: none;
-}
-
 .buttons {
   font-family: Roboto;
   font-style: normal;
@@ -1382,9 +1376,21 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .buttons__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .buttons__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .button-radio {
@@ -1418,7 +1424,12 @@ textarea {
   margin-right: 0px;
 }
 
-/* ----------------------------------------------------portfolio------------------------------------------------------------------- */
+@media screen and (max-width: 767px) {
+  .buttons__item:nth-child(n+4) {
+    padding-top: 15px;
+  }
+}
+
 .portfolio {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -1536,6 +1547,11 @@ textarea {
   padding-bottom: 20px;
 }
 
+.off {
+  display: none;
+}
+
+/* ----------------------------------------------------portfolio------------------------------------------------------------------- */
 @media screen and (max-width: 1199px) {
   .area-first {
     text-align: center;
