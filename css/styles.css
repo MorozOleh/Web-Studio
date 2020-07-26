@@ -304,14 +304,8 @@ textarea {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.29;
-}
-
-@media screen and (min-width: 1200px) {
-  .logo-link {
-    font-size: 26px;
-    line-height: 1.19;
-  }
+  line-height: 1.16;
+  letter-spacing: 0.03em;
 }
 
 .logo-link--inverse {
@@ -325,6 +319,12 @@ textarea {
 @media screen and (min-width: 768px) {
   .header-nav {
     margin-left: 81px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-nav {
+    margin-left: 85px;
   }
 }
 
@@ -374,7 +374,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .site-nav__link {
     font-size: 14px;
-    line-height: 1.20;
+    line-height: 1.14;
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -397,15 +397,15 @@ textarea {
   border: 2px solid #2196F3;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .header-address {
-    margin-top: 60px;
+    margin-left: 84px;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .header-address {
-    margin-left: auto;
+@media screen and (max-width: 767px) {
+  .address-nav {
+    margin-top: 60px;
   }
 }
 
@@ -439,8 +439,8 @@ textarea {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: #757575;
   text-decoration: none;
@@ -448,13 +448,19 @@ textarea {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 0;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .address-nav__link {
-    padding: 0;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address-nav__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -530,6 +536,9 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media screen and (max-width: 767px) {

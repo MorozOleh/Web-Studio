@@ -5,6 +5,10 @@
     @media screen and(min-width: $tablet){
         margin-left: 81px; 
     }
+
+     @media screen and(min-width: $decktop){
+        margin-left: 85px; 
+    }
 }
 
 
@@ -50,7 +54,7 @@
 
 @media screen and (min-width: $tablet) {
     font-size: 14px;
-    line-height: 1.20;
+    line-height: 1.14;
     padding-top: 32px;
     padding-bottom: 32px;}
 
