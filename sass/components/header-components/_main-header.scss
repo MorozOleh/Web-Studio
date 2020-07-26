@@ -7,15 +7,14 @@
 
 .container__header{
     
-        display: flex;
-        align-items: center;
+    display: flex;
+    align-items: center;
 
         @media screen and ( max-width: $mobile-max){
         position: relative;
         min-height: 60px;
         justify-content: space-between;
-       } 
-        
+       }       
 }
 
 .first-mobile{
@@ -35,6 +34,7 @@
         display: none;
         padding-top: 120px;
         padding-bottom: 60px;
+        z-index: 1;
 
     &.is-open{
         display: block;}
