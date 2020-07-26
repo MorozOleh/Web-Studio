@@ -4,26 +4,21 @@
         margin-top:60px;
         }
 
-    // @media screen and (min-width: $tablet){
-    //     margin-left: auto;
-    // }
+    @media screen and (min-width: $tablet){
+        margin-left: auto;
+    }
 }
+
 
 .address-nav {
-  @extend %list;
+    @extend %list;
 
-     @media screen and(min-width: $decktop){
-      display: flex;
-      
-  }
+        @media screen and(min-width: $decktop){
+            display: flex;
+        }
 }
 
-// .address-nav__item{
-//    @media screen and(min-width: $decktop){
-//         display: flex;
-//         align-items: center;
-//   }
-// }
+
 
 
 .address-nav__item + .address-nav__item{

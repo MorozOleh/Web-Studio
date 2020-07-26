@@ -354,8 +354,8 @@ textarea {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   color: var(--main-color);
-  font-size: 18px;
   font-weight: 500;
+  font-size: 18px;
   line-height: 1.16;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -375,13 +375,6 @@ textarea {
   .site-nav__link {
     font-size: 14px;
     line-height: 1.20;
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .site-nav__link {
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -407,6 +400,12 @@ textarea {
 @media screen and (max-width: 767px) {
   .header-address {
     margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-address {
+    margin-left: auto;
   }
 }
 
