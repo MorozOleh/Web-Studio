@@ -1,5 +1,5 @@
 
-.menu--button{
+.menu-button{
 
     display: inline-flex;
     margin: 0;
@@ -10,12 +10,12 @@
         @media screen and (min-width: $tablet){
             display: none;}
         
-    &__icon-cross{
+    &__icon--cross{
     display: none;}
 
-      &.is-open .menu--button__icon-cross{
+      &.is-open .menu-button__icon--cross{
       display: block;}
       
-          &.is-open .menu--button__icon-menu{
+          &.is-open .menu-button__icon--menu{
           display: none;}
 }

@@ -3,8 +3,7 @@
 
 .header-nav{
     @media screen and(min-width: $tablet){
-       display: flex;
-       align-items: center; 
+       margin-left: 81px; 
     }
 }
 
@@ -13,7 +12,7 @@
 
   @media screen and (min-width: $tablet) {
      display: flex;
-      margin-left: 81px;} 
+      } 
 }
 
 
