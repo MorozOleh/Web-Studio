@@ -2,7 +2,11 @@
 .buttons{
   font-family: Roboto;
   font-style: normal;
-  padding-top: 93px;
+  padding-top: 60px;
+
+  @media screen and (min-width: $decktop){
+      padding-top: 93px;
+  }
 }
 
 .buttons__list{
