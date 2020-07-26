@@ -13,62 +13,68 @@
 <body>
 
 <header>
-    <!----------------------------navigation container---------------------------------------->
-    <div class="container container__header">
 
-        <a href="./index.html" class="logo-link">
-            <span class="logo-accent"> Web </span>
-            <span> Studio </span>
-        </a>
+    <div class="container page-header ">
 
-        <Button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="first-mobile"
-            data-menu-button="">
-            <svg class="menu-button__icon" width='40px' height="40px" aria-label="button of menu">
+        <nav class="nav-header">
 
-                <use class='menu-button__icon--cross' href="./images/sprite.svg#icon-menu__close"></use>
-                <use class='menu-button__icon--menu' href="./images/sprite.svg#icon-menu"></use>
-            </svg>
-        </Button>
-        <!-- -----------------------------------end logo------------------------------------- -->
+            <a href="./index.html" class="logo-link">
+                <span class="logo-accent"> Web </span>
+                <span> Studio </span>
+            </a>
 
-        <!---------------------------------- main navigation ----------------------------------->
-        <div class="first-mobile is-open" id="first-mobile" data-menu>
+            <Button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="first-mobile"
+                data-menu-button="">
+                <svg class="menu-button__icon" width='40px' height="40px" aria-label="button of menu">
 
-            <nav class="header-nav"></nav>
-            <ul class="list-style site-nav">
-                <li class="site-nav__item">
-                    <a class="site-nav__link" href="index.html"> Студія </a></li>
-                <li class="site-nav__item">
-                    <a class="site-nav__link site-nav__link--active" href="portfolio.html"> Портфоліо
-                    </a></li>
-                <li class="site-nav__item">
-                    <a class="site-nav__link" href=""> Контакти </a></li>
-            </ul>
-            </nav>
+                    <use class='menu-button__icon--cross' href="./images/sprite.svg#icon-menu__close"></use>
+                    <use class='menu-button__icon--menu' href="./images/sprite.svg#icon-menu"></use>
+                </svg>
+            </Button>
+            <!-- -----------------------------------end logo------------------------------------- -->
 
-            <!--------------------------------end main navigation---------------------------------  -->
+            <!---------------------------------- main navigation ----------------------------------->
+            <div class="menu-container is-open" id="menu-container" data-menu>
 
-            <!---------------------------- address mail and phone ------------------------------------>
-            <address class="header-address">
-                <ul class="address-nav">
-                    <li class="address-nav__item"><a href="mailto:info@devstudio.com" class="address-nav__link">
-                            <svg class="address-nav__icon-mail">
-                                <use href="./images/sprite.svg#icon-mail"></use>
-                            </svg>
-                            info@devstudio.com </a>
-                    </li>
-                    <li class="address-nav__item"><a href="tel:+38096111111" class="address-nav__link">
-                            <svg class="address-nav__icon-phone">
-                                <use href="./images/sprite.svg#icon-phone"></use>
-                            </svg>
-                            +38 096 111 11 11</a>
-                    </li>
-                </ul>
-            </address>
+                <div class="header-nav">
+
+                    <ul class="site-nav">
+
+                        <ul class="list-style site-nav">
+                            <li class="site-nav__item">
+                                <a class="site-nav__link" href="index.html"> Студія </a></li>
+                            <li class="site-nav__item">
+                                <a class="site-nav__link site-nav__link--active" href="portfolio.html"> Портфоліо
+                                </a></li>
+                            <li class="site-nav__item">
+                                <a class="site-nav__link" href=""> Контакти </a></li>
+
+                        </ul>
+                </div>
+
+                <!--------------------------------end main navigation---------------------------------  -->
+
+                <!---------------------------- address mail and phone ------------------------------------>
+                <address class="header-address">
+                    <ul class="address-nav">
+                        <li class="address-nav__item"><a href="mailto:info@devstudio.com" class="address-nav__link">
+                                <svg class="address-nav__icon-mail">
+                                    <use href="./images/sprite.svg#icon-mail"></use>
+                                </svg>
+                                info@devstudio.com </a>
+                        </li>
+                        <li class="address-nav__item"><a href="tel:+38096111111" class="address-nav__link">
+                                <svg class="address-nav__icon-phone">
+                                    <use href="./images/sprite.svg#icon-phone"></use>
+                                </svg>
+                                +38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
 
 
-        </div>
-
+            </div>
+        </nav>
     </div>
 </header>
   <!---------------------------------------end header------------------------------  -->
