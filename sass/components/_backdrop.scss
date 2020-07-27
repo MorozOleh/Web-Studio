@@ -20,7 +20,6 @@
 //------------------------modal-field-------------------------
 .modal{
 
-
   max-width: 450px;
   width: 100%;
   background-color: #ffffff;
@@ -80,9 +79,6 @@
  }
      
  
-
-
-
     &:hover .modal__icon{
        fill: $accent-color;}
 }
@@ -103,7 +99,7 @@
 
 .form-field{
   position: relative;
-  margin-left: 41px;
+  padding-left: 41px;
   padding-right: 41px;
   margin-bottom: 28px;
   font-family: $secondary-color;
@@ -199,6 +195,7 @@
 }
 
 .checkbox-field__icon{
+  
   width: 16px;
   height: 15px;
   margin-right: 8px;

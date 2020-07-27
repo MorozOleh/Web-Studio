@@ -1,17 +1,7 @@
 
-.header-address{
-    @media screen and (min-width: $tablet){
-        margin-left: 84px;
-    }
-
-    @media screen and (min-width: $decktop){
-        margin-left: 305px;
-    }
-}
-
-
 .address-nav {
     @extend %list;
+
         @media screen and (max-width: $mobile-max){
             margin-top:60px;
         }

@@ -15,73 +15,66 @@
 
 <header >
 
-    <div class="container page-header ">
+<div class="container page-header ">
 
-        <nav class="nav-header">
+    <nav class="nav-header">
 
+<!-- --------------------------------------------------------logo ------------------------------------------------->
+        <a href="./index.html" class="logo-link">
+            <span class="logo-accent"> Web </span>
+            <span> Studio </span>
+        </a>
+        <!-- -----------------------------------------------btn-menu-------------------------------------------------- -->
+        <Button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="first-mobile"
+            data-menu-button="">
+            <svg class="menu-button__icon" width='40px' height="40px" aria-label="button of menu">
 
-            <a href="./index.html" class="logo-link">
-                <span class="logo-accent"> Web </span>
-                <span> Studio </span>
-            </a>
+                <use class='menu-button__icon--cross' href="./images/sprite.svg#icon-menu__close"></use>
+                <use class='menu-button__icon--menu' href="./images/sprite.svg#icon-menu"></use>
+            </svg>
+        </Button>
 
-            <Button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="first-mobile"
-                data-menu-button="">
-                <svg class="menu-button__icon" width='40px' height="40px" aria-label="button of menu">
+        <!-- --------------------------container for navigation and contacts--------------------------  -------- -->
+        <div class="menu-container is-open" id="menu-container" data-menu>
+            <!-- -------------------------------------navigations list---------------------------------------- -->
+            <div class="header-nav">
+                <ul class="site-nav">
 
-                    <use class='menu-button__icon--cross' href="./images/sprite.svg#icon-menu__close"></use>
-                    <use class='menu-button__icon--menu' href="./images/sprite.svg#icon-menu"></use>
-                </svg>
-            </Button>
+                    <li class=" site-nav__item ">
+                        <a class=" site-nav__link site-nav__link--active" href="index.html"> Студія </a>
+                    </li>
 
+                    <li class=" site-nav__item ">
+                        <a class=" site-nav__link" href="portfolio.html"> Портфоліо </a></li>
 
-            <div class="menu-container is-open" id="menu-container" data-menu>
-
-                <div class="header-nav">
-
-                    <ul class="site-nav">
-
-                        <li class=" site-nav__item ">
-                            <a class=" site-nav__link site-nav__link--active" href="index.html"> Студія </a>
-                        </li>
-
-                        <li class=" site-nav__item ">
-                            <a class=" site-nav__link" href="portfolio.html"> Портфоліо </a></li>
-
-                        <li class=" site-nav__item ">
-                            <a class=" site-nav__link" href=""> Контакти </a></li>
-
-                    </ul>
-
-                </div>
-
-                <address class="header-address">
-                    <ul class="address-nav">
-                        <li class="address-nav__item">
-                            <a href="mailto:info@devstudio.com" class="address-nav__link">
-                                <svg class="address-nav__icon-mail">
-                                    <use href="./images/sprite.svg#icon-mail"></use>
-                                </svg>
-                                info@devstudio.com </a>
-                        </li>
-
-                        <li class="address-nav__item">
-                            <a href="tel:+38096111111" class="address-nav__link">
-                                <svg class="address-nav__icon-phone">
-                                    <use href="./images/sprite.svg#icon-phone"></use>
-                                </svg>
-                                +38 096 111 11 11</a>
-                        </li>
-                    </ul>
-                </address>
+                    <li class=" site-nav__item ">
+                        <a class=" site-nav__link" href=""> Контакти </a></li>
+                </ul>
             </div>
-        </nav>
-        <!-------------------------end address mail and phone----------------------------  -->
+            <!-- ----------------------------------------------contacts list------------------------------------- -->
+            <address class="header-address">
+                <ul class="address-nav">
+                    <li class="address-nav__item">
+                        <a href="mailto:info@devstudio.com" class="address-nav__link">
+                            <svg class="address-nav__icon-mail">
+                                <use href="./images/sprite.svg#icon-mail"></use>
+                            </svg>
+                            info@devstudio.com </a>
+                    </li>
 
-    </div>
-    <!-----------------------------------------end navigation----------------------------  -->
+                    <li class="address-nav__item">
+                        <a href="tel:+38096111111" class="address-nav__link">
+                            <svg class="address-nav__icon-phone">
+                                <use href="./images/sprite.svg#icon-phone"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
+    </nav>
+</div>
 </header>
-  <!---------------------------------------end header------------------------------  -->
 
 
 
