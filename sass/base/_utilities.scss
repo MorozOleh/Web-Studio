@@ -44,8 +44,7 @@ textarea{
   
   
   @media screen and  (max-width: $mobile-max){
-    width: $mobile;
-  }
+    max-width: $mobile;}
 
   @media screen and (min-width: $tablet){
     width: $tablet;

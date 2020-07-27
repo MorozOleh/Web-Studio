@@ -284,7 +284,7 @@ textarea {
 
 @media screen and (max-width: 767px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
@@ -514,9 +514,8 @@ textarea {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;
     height: auto;
-    background-color: white;
+    background-color: #ffffff;
     text-align: center;
     border-top: 1px solid #ECECEC;
     border-bottom: 1px solid #ECECEC;
@@ -525,15 +524,17 @@ textarea {
     z-index: 1;
     display: block;
     opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    overflow: auto;
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
     -webkit-transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
-    pointer-events: none;
   }
   .menu-container.is-open {
     opacity: 1;
-    pointer-events: painted;
+    visibility: visible;
     -webkit-transform: translateY(0);
             transform: translateY(0);
     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
