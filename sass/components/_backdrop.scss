@@ -20,6 +20,9 @@
 //------------------------modal-field-------------------------
 .modal{
 
+  padding-left: 41px;
+  padding-right: 41px;
+
   max-width: 450px;
   width: 100%;
   background-color: #ffffff;
@@ -99,8 +102,8 @@
 
 .form-field{
   position: relative;
-  padding-left: 41px;
-  padding-right: 41px;
+//   padding-left: 41px;
+//   padding-right: 41px;
   margin-bottom: 28px;
   font-family: $secondary-color;
   font-style: normal;
@@ -185,7 +188,7 @@
 .checkbox-field{
   display: flex;
   align-items: center;
-  margin-left: 54px;
+  margin-left: 12px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -195,7 +198,6 @@
 }
 
 .checkbox-field__icon{
-  
   width: 16px;
   height: 15px;
   margin-right: 8px;
