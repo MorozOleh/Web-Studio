@@ -589,7 +589,6 @@ textarea {
   font-style: normal;
   color: #ffffff;
   letter-spacing: 0.06em;
-  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(47, 48, 58, 0.8);
@@ -608,7 +607,6 @@ textarea {
 @media screen and (max-width: 767px) {
   .banner {
     height: 400px;
-    min-width: 480px;
     max-width: 100%;
     background-size: cover;
     background-repeat: repeat;
@@ -1608,7 +1606,7 @@ textarea {
 
 @media screen and (max-width: 370px) {
   .product__kryak {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
