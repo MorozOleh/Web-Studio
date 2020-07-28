@@ -1512,7 +1512,7 @@ textarea {
   margin-right: 0px;
 }
 
-@media screen and (max-width: 378px) {
+@media screen and (max-width: 375px) {
   .buttons__item:nth-child(n+3) {
     padding-top: 15px;
   }
@@ -1611,7 +1611,7 @@ textarea {
 
 @media screen and (max-width: 370px) {
   .product__kryak {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
