@@ -1512,7 +1512,7 @@ textarea {
   margin-right: 0px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 378px) {
   .buttons__item:nth-child(n+3) {
     padding-top: 15px;
   }
