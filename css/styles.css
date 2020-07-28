@@ -693,7 +693,7 @@ textarea {
   font-style: normal;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .features {
     padding-top: 60px;
   }
