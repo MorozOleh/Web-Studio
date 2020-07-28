@@ -282,13 +282,13 @@ textarea {
   padding-left: 15px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    width: 480px;
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .container {
     width: 768px;
   }
@@ -592,7 +592,6 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(47, 48, 58, 0.8);
-  min-width: 480px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../css/images/hero-background/hero-1600.jpg");
   background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../css/images/hero-background/hero-1600.jpg");
   background-size: 1600px 600px;
@@ -637,7 +636,7 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .banner {
-    max-width: 100%;
+    max-width: 1600px;
     height: 600px;
   }
 }
@@ -931,7 +930,6 @@ textarea {
   background: #F5F4FA;
   margin-left: auto;
   margin-right: auto;
-  min-width: 480px;
   max-width: 1600px;
 }
 
@@ -984,21 +982,21 @@ textarea {
   border-bottom-left-radius: 4px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .container-teams__photo {
-    max-width: 100%;
+    width: 450px;
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .container-teams__photo {
-    max-width: 100%;
+    max-width: 354px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container-teams__photo {
-    max-width: 100%;
+    max-width: 270px;
   }
 }
 
@@ -1893,7 +1891,6 @@ textarea {
   margin-right: auto;
   margin-left: auto;
   background-position: center;
-  min-width: 480px;
   max-width: 1600px;
 }
 

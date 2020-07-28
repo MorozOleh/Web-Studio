@@ -4,7 +4,6 @@
     background: #F5F4FA;
     margin-left: auto;
     margin-right: auto;
-    min-width: 480px;
     max-width: 1600px;
 }
 
@@ -54,19 +53,20 @@
         border-bottom-left-radius: 4px;
         }
 
-        .container-teams__photo{
-            @media screen and (max-width: $mobile-max){
-                max-width: 100%;}
-                // max-width: 450px;}
-                
-              @media screen and (max-width: $tablet-max){
-              max-width: 100%;}
-            //   max-width: 354px;}
 
+    .container-teams__photo{
+            @media screen and (min-width: $mobile){
+                width: 450px;
+            }
+                
+              @media screen and (min-width: $tablet){
+                max-width: 354px;
+                }
+                           
                 @media screen and (min-width: $decktop){
-                max-width: 100%;}
-                // max-width: 270px;}
-        }
+                    max-width: 270px;
+                }
+    }
     
 .about-staff__name {
   font-weight: 500;

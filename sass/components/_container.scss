@@ -7,11 +7,11 @@
   padding-left: 15px;
   
   
-    @media screen and  (max-width: $mobile-max){
-        max-width: $mobile;}
+    @media screen and  (min-width: $mobile){
+        width: 480px;}
 
 
-    @media screen and (max-width: $tablet-max){
+    @media screen and (min-width: $tablet){
         width: $tablet;
   }
 
