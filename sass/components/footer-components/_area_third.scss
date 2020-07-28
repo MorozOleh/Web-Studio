@@ -35,7 +35,7 @@
      margin-bottom: 20px; 
   }
  
-@media screen and (min-width : $tablet) and (max-width: 1199px){
+@media screen and (min-width : $tablet) and (max-width: $tablet-max){
     width: 450px;
     margin-right: 159px;
     margin-left: 159px;

@@ -4,10 +4,10 @@
   font-family: $font-text;
   font-style: normal;
 
-  @media screen and (max-width: $tablet-max){
+    @media screen and (max-width: $tablet-max){
       padding-top: 60px;}
     
-        @media screen and (min-width: $decktop){
+    @media screen and (min-width: $decktop){
         padding-top: 62px;} 
 }
 

@@ -7,14 +7,11 @@
     @extend %list;
 
         @media screen and (max-width: $mobile-max){
-            margin-top:60px;
-        }
-
+            margin-top:60px;}
+        
         @media screen and(min-width: $decktop){
-            display: flex;
-        }
-}
-
+            display: flex;}
+    }
 
 
 
