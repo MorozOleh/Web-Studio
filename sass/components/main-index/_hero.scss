@@ -6,56 +6,13 @@
     color:$primary-white-color;
     letter-spacing: 0.06em;
     max-width: $mobile;
-    
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(47, 48, 58, 0.8);
     
-    @media screen and (max-width: $mobile-max){
-    height: 400px;  
-    width: $mobile;
-    background-image: 
-    linear-gradient( rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
-    url(../css/images/hero-background/hero-480.png);
-    background-size: 768px 400px;
-
-    @media screen and (min-device-pixel-ratio: 2),
-  screen and (-webkit-min-device-pixel-ratio: 2),
-  screen and (-o-min-device-pixel-ratio: 2/1),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  
     background-image:
-    linear-gradient( rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
-    url('../css/images/hero-background/hero-480@2x.png');}}
-  
-    
-
-    @media screen and (min-width: $tablet){
-        height: 400px;
-        max-width: $tablet;
-        background-image:
         linear-gradient( rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
-         url('../css/images/hero-background/hero-768.png');
-        background-size: 768px 400px;
-
-        @media screen and (min-device-pixel-ratio: 2),
-  screen and (-webkit-min-device-pixel-ratio: 2),
-  screen and (-o-min-device-pixel-ratio: 2/1),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  
-    background-image:
-    linear-gradient( rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
-    url('../css/images/hero-background/hero-768@2x.png');}}
-  
- 
-    @media screen and (min-width: $decktop){
-        max-width: 1600px;
-        height:600px;
-        background-image:
-        linear-gradient( rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
-         url('../css/images/hero-background/hero-1600.png');
+         url('../css/images/hero-background/hero-1600.jpg');
         background-size: 1600px 600px;
     
     @media screen and (min-device-pixel-ratio: 2),
@@ -66,7 +23,61 @@
   
     background-image:
     linear-gradient( rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
-    url('../css/images/hero-background/hero-1600@2x.png');}}
+    url('../css/images/hero-background/hero-1600@2x.jpg');}
+
+    @media screen and (max-width: $mobile-max){
+    height: 400px;  
+    min-width: 480px;
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    
+//     background-image: 
+//     linear-gradient( rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
+//     url(../css/images/hero-background/hero-480.png);
+//     background-size: 768px 400px;
+
+//     @media screen and (min-device-pixel-ratio: 2),
+//   screen and (-webkit-min-device-pixel-ratio: 2),
+//   screen and (-o-min-device-pixel-ratio: 2/1),
+//   screen and (min-resolution: 192dpi),
+//   screen and (min-resolution: 2dppx) {
+  
+//     background-image:
+//     linear-gradient( rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
+//     url('../css/images/hero-background/hero-480@2x.png');}
+
+        background-image:
+        linear-gradient( rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
+         url('../css/images/hero-background/hero-768.jpg');
+        background-size: 768px 400px;
+
+        @media screen and (min-device-pixel-ratio: 2),
+  screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (-o-min-device-pixel-ratio: 2/1),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  
+    background-image:
+    linear-gradient( rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
+    url('../css/images/hero-background/hero-768@2x.jpg');}
+
+}
+  
+    @media screen and (min-width: $tablet){
+        height: 400px;
+        max-width: 100%;
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: center;
+}
+  
+
+    @media screen and (min-width: $decktop){
+        max-width: 1600px;
+        height:600px;
+        }
   
  }
 
@@ -83,9 +94,9 @@
         padding-left: 60px;
         margin-bottom: 30px;
 
-    @media screen and (min-width: $tablet){
-        padding-right: 204px;
-        padding-left: 204px;}
+    // @media screen and (min-width: $tablet){
+    //     padding-right: 204px;
+    //     padding-left: 204px;}
     
 
     @media screen and (min-width: $decktop){

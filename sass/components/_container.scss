@@ -1,0 +1,21 @@
+
+// ------------------------container------------------------
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  
+  
+    @media screen and  (max-width: $mobile-max){
+        max-width: $mobile;}
+
+
+    @media screen and (max-width: $tablet-max){
+        width: $tablet;
+  }
+
+    @media screen and (min-width: $decktop){
+        width: $decktop;
+  }
+}

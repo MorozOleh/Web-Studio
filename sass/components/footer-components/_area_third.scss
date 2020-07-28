@@ -48,7 +48,7 @@
 
 .footer-form__botton{
   display: inline-flex;
-  margin-left: 12px;
+
   padding: 10px 32px;
   border: 1px solid transparent;
   min-width: 200px;
@@ -63,6 +63,10 @@
   background-color:$accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  @media screen and (min-width:$decktop){
+  margin-left: 12px;
+  }
 }
 
 .footer-form__icon{

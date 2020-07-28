@@ -4,13 +4,16 @@
 @import"./utils/mixins";
 @import'./utils/breakpoints';
 @import"./base/utilities";
-@import'./components/header-components/main-header';
+@import'./components/container';
+@import'./components/page-header/page-header';
 
 @import'./components/main-index/hero';
 @import"./components/main-index/features";
 @import'./components/main-index/direction';
 @import'./components/main-index/team';
 @import'./components/main-index/custumers';
+
+
 @import"./components/backdrop";
 @import"./components/portfolio/portfolio";
 @import"./components/footer-components/footer";

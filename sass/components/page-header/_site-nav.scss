@@ -1,20 +1,18 @@
-.header-nav{
-    @media screen and(min-width: $tablet){
-        margin-left: 81px; 
-    }
-
-     @media screen and(min-width: $decktop){
-        margin-left: 85px; 
-    }
-}
 
 
 .site-nav{
      @extend %list;
 
+
      @media screen and (min-width: $tablet) {
-         display: flex;
+        display: flex;
+        margin-left: 81px; 
+
     } 
+
+     @media screen and(min-width: $decktop){
+        margin-left: 85px; 
+    }
 }
 
 
@@ -34,6 +32,7 @@
 .site-nav__link{
     display: inline-block;
     position: relative;
+    text-decoration: none;
     font-family: $font-text;
     font-style: normal ;
     color:var(--main-color);
@@ -41,10 +40,8 @@
     font-size: 18px;
     line-height: 1.16;
     letter-spacing: 0.02em;
-    text-decoration: none;
     @include transitionDurationTaming();
   
-
 // --padding beetwen text an border
 @media screen and (max-width: $mobile-max) {
     padding-bottom: 8px;}
