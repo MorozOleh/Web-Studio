@@ -91,9 +91,14 @@
         padding-left: 60px;
         margin-bottom: 30px;
 
-    // @media screen and (min-width: $tablet){
-    //     padding-right: 204px;
-    //     padding-left: 204px;}
+    @media screen and (max-width: 450px){
+        font-size:24px;
+        line-height: 1.35;
+    }
+
+    @media screen and (min-width: $tablet){
+        padding-right: 204px;
+        padding-left: 204px;}
     
 
     @media screen and (min-width: $decktop){

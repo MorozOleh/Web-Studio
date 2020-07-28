@@ -655,6 +655,20 @@ textarea {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 450px) {
+  .banner__title {
+    font-size: 24px;
+    line-height: 1.35;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner__title {
+    padding-right: 204px;
+    padding-left: 204px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .banner__title {
     font-size: 44px;
