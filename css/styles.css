@@ -1606,6 +1606,12 @@ textarea {
   color: #ffffff;
 }
 
+@media screen and (max-width: 370px) {
+  .product__kryak {
+    font-size: 14px;
+  }
+}
+
 .product__meta {
   padding-top: 20px;
   border-bottom: 1px solid #eeeeee;

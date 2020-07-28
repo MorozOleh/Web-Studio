@@ -83,6 +83,10 @@
   line-height: 1.56;
   letter-spacing: 0.03em;
   color:$primary-white-color;
+
+  @media screen and (max-width:370px){
+      font-size: 14px;
+  }
  }
 
 
